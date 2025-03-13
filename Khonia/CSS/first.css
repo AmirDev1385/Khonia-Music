@@ -1,0 +1,73 @@
+/* Spotify Inspired CSS */
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Circular', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1DB954;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1DB954;
+}
+
+.music-category, .trending {
+    padding: 20px;
+}
+
+.track {
+    background: #282828;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.track p {
+    font-size: 16px;
+    color: #fff;
+}
+
+audio {
+    width: 100%;
+    filter: drop-shadow(0px 0px 10px #1DB954);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+audio:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 15px #1DB954);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #181818;
+    color: #fff;
+}

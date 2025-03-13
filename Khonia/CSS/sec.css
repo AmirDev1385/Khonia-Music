@@ -1,0 +1,50 @@
+.khalqi {
+    width: 35%;
+    height: 25px;
+    border-radius: 5% 5% 5% 5%;
+    background-color: #a18d91;
+    border: solid rgb(124, 205, 255);;
+}
+.khalqi>label{
+    color: rgb(248, 235, 91);
+}
+
+.Tasnif{
+    width: 35%;
+    height: 25px;
+    border-radius: 5% 5% 5% 5%;
+    background-color: rgb(128, 225, 249);
+    position: absolute;
+    top: 30px; bottom: 30px;
+    right: 78px; left: 650px;
+}
+
+.Trend-In-iran{
+    width: 35%;
+    height: 25px;
+    border-radius: 5% 5% 5% 5%;
+    background-color: rgb(128, 225, 249);
+    position: absolute;
+    top: 430px; bottom: 430px;
+    right: 300px; left: 21px;
+}
+
+
+.trend-clip{
+    position: absolute;
+    top: 780px; bottom: 780px;
+    right: 80px; left: 480px;
+    width: 780px; height: 670px;
+    border-radius: 1% 1% 1% 1%;
+    background-color: lightgreen;
+}
+
+
+.about{
+    background-color: lightseagreen;
+    font-weight: 200px;
+    position: absolute;
+    top:1488px; bottom: 1488px;
+    right: 540px; left: 30px;
+    width: 350px; height: 145px;
+}
