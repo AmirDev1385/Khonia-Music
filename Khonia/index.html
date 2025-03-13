@@ -8,44 +8,56 @@
     <link rel="stylesheet" href="CSS/sec.css">
 </head>
 <body>
-    <header>
-        <h1>Khonia Music</h1>
-        <nav>
-            <ul>
-                <li><a href="#classical">Classical</a></li>
-                <li><a href="#trending">Trending</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="classical" class="music-category">
-            <h2>Classical Iranian Music</h2>
-            <div class="track">
-                <p>Khoshe Chini - Bannan</p>
-                <audio controls>
-                    <source src="https://dl.downlooad.ir/artist/rvh-allh-khalghy/RVH%20ALLH%20KHALGHY%20-%20KHVSHH%E2%80%8CCHYN%20-%20(Music-Pars).mp3" type="audio/mpeg">
-                </audio>
+        <header>
+            <h1>Khonia Music</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="toggleSection('classical')">Classical</a></li>
+                    <li><a href="#" onclick="toggleSection('trending')">Trending</a></li>
+                    <li><a href="#about">About</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="music-container">
+                <section id="classical" class="music-category">
+                    <h2>Classical Iranian Music</h2>
+                    <div class="track">
+                        <p>Khoshe Chini - Bannan</p>
+                        <audio controls>
+                            <source src="https://dl.downlooad.ir/artist/rvh-allh-khalghy/RVH%20ALLH%20KHALGHY%20-%20KHVSHH%E2%80%8CCHYN%20-%20(Music-Pars).mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="track">
+                        <p>Laleh Chun Royeh - Ruhollah Khaleqi</p>
+                        <audio controls>
+                            <source src="https://dl.downlooad.ir/artist/rvh-allh-khalghy/RVH%20ALLH%20KHALGHY%20-%20LALH%D9%94%20KHVNYN%20-%20(Music-Pars).mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </section>
+                <section id="trending" class="trending">
+                    <h2>Trending Music in Iran</h2>
+                    <div class="track">
+                        <p>Nagi Nagofti - Farzad Farzin</p>
+                        <audio controls>
+                            <source src="https://irsv.upmusics.com/AliBZ/Farzad%20Farzin%20%7C%20Nagi%20Ke%20Nagoftam%20(320).mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </section>
             </div>
-            <div class="track">
-                <p>Laleh Chun Royeh - Ruhollah Khaleqi</p>
-                <audio controls>
-                    <source src="https://dl.downlooad.ir/artist/rvh-allh-khalghy/RVH%20ALLH%20KHALGHY%20-%20LALH%D9%94%20KHVNYN%20-%20(Music-Pars).mp3" type="audio/mpeg">
-                </audio>
-            </div>
-        </section>
-        <section id="trending" class="trending">
-            <h2>Trending Music in Iran</h2>
-            <div class="track">
-                <p>Nagi Nagofti - Farzad Farzin</p>
-                <audio controls>
-                    <source src="https://irsv.upmusics.com/AliBZ/Farzad%20Farzin%20%7C%20Nagi%20Ke%20Nagoftam%20(320).mp3" type="audio/mpeg">
-                </audio>
-            </div>
-        </section>
-    </main>
-    <footer id="about">
-        <p>Khonia Music - Inspired by <a style='color: red; text-decoration: none;' href='https://github.com/AmirDev1385'>Amirhossein</a></p>
-    </footer>
+        </main>
+        <footer id="about">
+            <p>Khonia Music - Inspired by <a href='https://github.com/AmirDev1385' style="color: red; text-decoration: none;">Amirhossein</a></p>
+        </footer>
 </body>
+<script>
+    function toggleSection(id) {
+        var section = document.getElementById(id);
+        section.classList.toggle("expanded");
+    }
+
+
+    alert(' For visit other sides, please click on (Classical, Trending, About)')
+</script>
 </html>

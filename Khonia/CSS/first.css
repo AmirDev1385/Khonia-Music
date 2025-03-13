@@ -1,4 +1,3 @@
-/* Spotify Inspired CSS */
 
 body {
     background-color: #121212;
@@ -19,6 +18,39 @@ header {
 h1 {
     font-size: 24px;
     color: #1DB954;
+    text-align: center;
+    position: relative;
+    border: 3px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    animation: borderGlow 3s infinite alternate, scaleEffect 3s infinite alternate;
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: #1DB954;
+        box-shadow: 0 0 5px #1DB954;
+    }
+    50% {
+        border-color: #00FFFF;
+        box-shadow: 0 0 15px #00FFFF;
+    }
+    100% {
+        border-color: transparent;
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+    }
+}
+
+@keyframes scaleEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 nav ul {
